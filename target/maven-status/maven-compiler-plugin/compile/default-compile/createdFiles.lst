@@ -1,0 +1,6 @@
+com\man\controller\DemoController.class
+com\man\controller\GeneralController.class
+com\man\service\TestService.class
+com\man\bean\DemoBean.class
+com\man\mapping\Test.class
+com\man\dao\TestDao.class
