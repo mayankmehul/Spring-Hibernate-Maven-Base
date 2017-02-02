@@ -17,10 +17,27 @@ public class Test implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id", nullable=false, unique=true)
 	private int id;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Column(name="first_name", nullable=false)
+	private String firstName;
 	
-	@Column(name="firstName", nullable=false)
-	private String firstNAme;
-	
-	@Column(name="lastName", nullable=false)
-	private String lastNAme;
+	@Column(name="last_name", nullable=false)
+	private String lastName;
+
 }
